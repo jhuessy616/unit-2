@@ -49,3 +49,10 @@ console.log(`Two plus two is ${2 + 2}`);
 
 //! Casing matters
 
+
+let firstName, lastName, age
+firstName = "Bill"
+lastName = "Hader"
+age= 42
+console.log(`My name is ${firstName} ${lastName} and I am ${age}!`)
+

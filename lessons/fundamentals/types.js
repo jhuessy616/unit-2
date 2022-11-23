@@ -100,6 +100,7 @@ Null
 - Null is an empty value.
 - Think of it as we have an empty container - nothing is in it but it exists as space to fill later on.
 */
+// in a mathematic equation evaluated as 0 
 
 var isLoggedIn = null
 
@@ -107,6 +108,7 @@ var isLoggedIn = null
 /* 
 Undefined
 - No value is assigned and does not act as an empty container
+undefined can't be evaluted in a numerical addition get NaN
 
 */
 
@@ -129,3 +131,5 @@ console.log(Boolean(isLoggedIn));
 console.log(Boolean(myAddress));
 console.log(Boolean(notNumber));
 console.log(Boolean(0));
+
+// if true is added to a number it is evaluated as 1 and false is 0
