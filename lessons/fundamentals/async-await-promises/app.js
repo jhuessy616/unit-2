@@ -133,3 +133,10 @@ async function displayData() {
 }
 
 displayData()
+
+// button example don't need 
+// let btn = document.getElementsByTagName("button")
+
+// btn[0].addEventListener("click", (e) => {
+//     console.log(e)
+// })

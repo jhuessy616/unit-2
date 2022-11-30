@@ -60,14 +60,14 @@ console.log(greeting);
 // ! Example of if - else if
 // TODO: between the hours of 12-17 store in greeting "Good Afternoon" Anything above 17 greeting is "Good Evening"
 if (currentTime < 12) {
-    //  block of code that gets executed if the conditional is true
-    greeting = "Good Morning";
+  //  block of code that gets executed if the conditional is true
+  greeting = "Good Morning";
 } else if (currentTime >= 12 && currentTime <= 17) {
-    // block of code gets executed if it is not true
-    greeting = "Good Afternoon";
+  // block of code gets executed if it is not true
+  greeting = "Good Afternoon";
 } else {
-    // your final else statement can be viewed as a default condition if nothing matches
-    greeting = "Good Evening";
+  // your final else statement can be viewed as a default condition if nothing matches
+  greeting = "Good Evening";
 }
 console.log(greeting);
 
@@ -94,8 +94,7 @@ if (!isLightBulbOn) {
   console.log("refactored - The light bulb is off");
 }
 
-
-// !How rob has his page 
+// !How rob has his page
 /* 
 Conditionals
 - Conditionals are used for descision making
@@ -161,13 +160,12 @@ if (isLightBulbOn != true) {
 }
 
 // Refactored code
-  if (!isLightBulbOn) {
-    console.log("refactored - The light bulb is off");
-  }
+if (!isLightBulbOn) {
+  console.log("refactored - The light bulb is off");
+}
 
 var today = new Date();
 console.log(today.getSeconds());
-
 
 var currentSeconds = today.getSeconds();
 
@@ -209,18 +207,59 @@ let month = "Jan";
 let totalNumberofDays = 0;
 switch (month) {
   case "Dec":
-    case "Jan":
+  case "Jan":
     totalNumberofDays = 31;
     break;
   // case "Jan":
-  //   totalNumberofDays = 31; can combine all numbers with the same b=number of days 
+  //   totalNumberofDays = 31; can combine all numbers with the same b=number of days
   //   break;
   case "Feb":
     totalNumberofDays = 28;
     break;
   default:
     totalNumberofDays = "Month did not match";
-
 }
 
 console.log(totalNumberofDays);
+
+// ? Ternary React Conditional Component
+
+let flag = true;
+
+// conditional is always asking if something is true if want to check if something is false add ! infront of it.
+if (flag) {
+  console.log("<Signup />");
+} else {
+  console.log("<Login />");
+}
+
+// Ternary Syntax
+//  condition ? statement if true : statement if false
+// for reaCT YOU MUST USE THIS SYNTAX
+flag ? console.log("<Signup />") : console.log("<Login />");
+
+// can have an if without an else
+// ? If/else allows for if-only conditional
+if (true) {
+  console.log("true condition");
+}
+// ? Ternaries do not. There needs to be a null for the falsey condition
+// for ternaries you need a else. can be null if you don't care
+true ? console.log("ternary true condition") : null;
+
+// ? Chaining ternaries
+// ? : else if ? condition if true
+// multiple conditions syntax
+let temp = 45;
+
+if (temp >= 72) {
+  console.log("it's summer");
+} else if (temp >= 62) {
+  console.log("it's fall");
+}
+
+// prettier-ignore
+temp >= 72 ? console.log("It's summer")
+  : temp >= 62 ? console.log("It's Fall")
+    : temp >= 32 ? console.log("It's winter")
+      : null;
